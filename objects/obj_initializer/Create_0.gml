@@ -8,7 +8,7 @@ for(var i = 0; i <(400/global.difficulty); i++)
 	var next_note = 0;
 	var next_note_color = 0;
 	
-	if 1 < 4 {
+	if i < 4 {
 		next_note = (i * global.difficulty) + 8;
 		next_note_color = 1;
 	} else {
@@ -18,3 +18,5 @@ for(var i = 0; i <(400/global.difficulty); i++)
 	
 	array_push(global.notes_array, [next_note, next_note_color])
 }
+
+show_debug_message(global.notes_array)
